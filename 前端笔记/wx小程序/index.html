@@ -1,0 +1,2119 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="qinshij">
+      
+      
+      
+        <link rel="prev" href="../react/">
+      
+      
+        <link rel="next" href="../%E5%93%81%E4%BC%98%E8%B4%AD%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>微信小程序 - qinshij's Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="qinshij&#39;s Docs" class="md-header__button md-logo" aria-label="qinshij's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            qinshij's Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              微信小程序
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="qinshij&#39;s Docs" class="md-nav__button md-logo" aria-label="qinshij's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    qinshij's Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    前端笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            前端笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ajax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ajax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NuxtJs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nuxt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VIM%E7%BC%96%E8%BE%91%E5%99%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vim编辑器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    react
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    微信小程序
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%93%81%E4%BC%98%E8%B4%AD%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    代码规范
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    正则表达式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            CSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/display%E5%92%8Cvisibility%E7%9A%84%E5%85%83%E7%B4%A0%E9%9A%90%E8%97%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Display和visibility的元素隐藏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/flex%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    flex弹性布局
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/float%E5%92%8Cposition%E7%9A%84%E5%B8%83%E5%B1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Float和position的布局
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/padding%2Cmargin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Padding,margin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E4%B8%89%E8%A7%92/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三角形的制作
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E4%BC%98%E5%85%88%E7%BA%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    css优先级
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E5%8A%A8%E7%94%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    动画
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E5%92%8Cbootstrap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    响应式布局
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E5%9D%97%E7%BA%A7%EF%BC%8C%E8%A1%8C%E5%86%85%EF%BC%8C%E8%A1%8C%E5%86%85%E5%9D%97%E5%85%83%E7%B4%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    块级，行内，行内块元素
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    复合选择器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E5%AD%97%E4%BD%93%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%28font%E5%92%8Ctext%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    字体font
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E5%B1%85%E4%B8%AD%E4%BB%A5%E5%8F%8A%E5%85%B6%E4%BB%96%E5%B8%83%E5%B1%80%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    居中以及其他布局小技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E8%BD%AC%E6%8D%A2%E7%9C%81%E7%95%A5%E5%8F%B7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文本溢出转换省略号
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E8%AE%BE%E7%BD%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    鼠标样式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    移动端
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/%E8%83%8C%E6%99%AF%E4%B9%9F%E6%98%AF%E4%B8%AA%E5%A4%A7%E5%AD%A6%E9%97%AE%28background%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    background
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Electron
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Electron
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Electron/%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electron包含Chromium和NodeJS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            HTML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/form%E7%9A%84%E4%B8%80%E5%AE%B6%E4%BA%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form表单元素
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/inputAndButton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    inputAndButton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/%E6%9C%89%E5%BA%8F%EF%BC%8C%E6%97%A0%E5%BA%8F%EF%BC%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%97%E8%A1%A8%E4%B8%89%E5%85%84%E5%BC%9F%28list%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/%E6%A0%87%E7%AD%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    标签介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/%E7%BB%93%E6%9E%84%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%AE%80%E5%8D%95%E6%A0%87%E7%AD%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    html
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HTML/%E8%A7%84%E8%A7%84%E6%95%B4%E6%95%B4%E7%9A%84%E8%A1%A8%E6%A0%BC%28table%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    表格
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    VUE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            VUE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VUE/JSON-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON-server简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VUE/mockJs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mockJs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VUE/vite-Vue3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vite-Vue3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VUE/vue-cli-Vue2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vue-cli-Vue2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VUE/vue%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vue代码优化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VUE/vue%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vue基础
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VUE/%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模板引擎(art-template)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    jQ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            jQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jQ/jQ%E7%9A%84Ajax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQ的ajax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jQ/jQ%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQ的问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jQ/%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQuery基础
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Js
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            Js
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js/JSON/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js/NodeJs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NodeJs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js/less%E9%A2%84%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    less
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js/seo%E4%BC%98%E5%8C%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    seo优化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js/%E5%9F%BA%E7%A1%80%E6%B3%A8%E6%84%8F%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    js基础注意点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js/%E9%AB%98%E7%BA%A7%E6%B3%A8%E6%84%8F%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    js进阶注意点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    浏览器
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
+            <span class="md-nav__icon md-icon"></span>
+            浏览器
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B5%8F%E8%A7%88%E5%99%A8/BOM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BOM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM_Element/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM_Element
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM_Event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM_Event
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM_document/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM_document
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">微信小程序</h1>
+<h1 id="_2">新建项目三个注意事项</h1>
+<ol>
+<li>目录需要选择一个空文件夹，否则可能会影响到目录不能自动生成。</li>
+<li>APPID 是小程序的唯一标识，需要注册开发者账号，并在开发-开发设置中复制过来。</li>
+<li>后端服务，因为不需要自己写后端，所以选择不使用云服务。</li>
+</ol>
+<h1 id="_3">小程序的目录结构</h1>
+<p>传统的 web 三大标准(文件)。</p>
+<ol>
+<li>结构   html</li>
+<li>样式   css</li>
+<li>行为   js         </li>
+</ol>
+<p>微信小程序的四大标准(文件)。</p>
+<ol>
+<li>结构    wxml</li>
+<li>样式    wxss</li>
+<li>行为    js      -&gt; 注意这里语法遵循 ECMAScript 语法，但是有些对象的 API 有差异。</li>
+<li>配置    json   -&gt; 小程序的配置项。</li>
+</ol>
+<h2 id="_4">配置项</h2>
+<h3 id="appjson">App.json  全局配置项</h3>
+<p>存在于项目的根目录。</p>
+<p>官方文档：https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html</p>
+<p>小程序根目录下的 <code>app.json</code> 文件用来对微信小程序进行全局配置，决定页面文件的路径（pages）、窗口表现（window）、设置网络超时时间、设置多 tab 等。</p>
+<ol>
+<li>json 是严格的 json 格式，注意书写规范，严格 json 不能写注释。</li>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#pages">pages</a> 是页面路径列表，数组的第一项为默认的启动页面。</li>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#window">window</a> 是全局的默认窗口表现，用于设置小程序的状态栏、导航条、标题、窗口背景色。</li>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#tabBar">tabBar</a> 是底部 <code>tab</code> 栏的表现。</li>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#networkTimeout">networkTimeout</a> 网络超时时间。</li>
+</ol>
+<h3 id="_5">页面配置项</h3>
+<p>每一个小程序页面也可以使用 <code>.json</code> 文件来对本页面的<strong>窗口表现</strong>进行配置。</p>
+<p>页面中配置项在当前页面会<strong>覆盖</strong> <code>app.json</code> 的 <code>window</code> 中相同的配置项。</p>
+<p>注意事项：只有 disableScroll 是页面配置项才有，其他的配置项在全局的配置项中都能看到。</p>
+<h2 id="_6">小程序界面组成</h2>
+<p>小程序的页面分为四部分组成：</p>
+<ol>
+<li>导航栏（原生的），不同的手机，导航栏的表现会有一些平台差异。</li>
+<li>tabBar（原生的）</li>
+<li>背景（原生的）</li>
+<li>页面 （类比之前的浏览器页面）</li>
+</ol>
+<h1 id="_7">页面</h1>
+<h2 id="block">block 标签</h2>
+<p>用于编组的空标签，block 标签上可以写 wx:for  wx:if 等指令。</p>
+<p>类似 Vue 中的 template 标签。</p>
+<p>应用场景：渲染一个包含多节点的结构块  block最终不会变成真正的dom元素。</p>
+<h2 id="_8">条件渲染</h2>
+<p>频繁需要显示隐藏使用hidden，如：点击频繁显示隐藏下拉菜单</p>
+<p>不需要频繁的显示隐藏使用wx:if，如：权限管理，没有权限的模块直接不渲染。</p>
+<p>小程序 hidden 工作原理。</p>
+<p>小程序添加了 hidden 的标签，底层是通过选择器的方式实现隐藏。</p>
+<p>底层通过 view[hidden]{ display: none; } 属性选择器，实现的 div 隐藏。</p>
+<p>既然涉及到了选择器，就会受到权重的影响，行内样式权重过高，会导致 hidden 隐藏无效。</p>
+<ol>
+<li>添加了 hidden 的盒子，匹配了内置的选择器，实现隐藏。</li>
+<li>如果 hidden 条件为 true，相当于 display: none 生效。</li>
+<li>如果 hidden 条件为 false，属性没有了，所以 display 用回原本的值。</li>
+</ol>
+<p>v-show 原理。</p>
+<p>v-show 是通过行内样式修改了盒子的显示与隐藏，行内样式权限高，问题较少。</p>
+<ol>
+<li>添加了 v-show 的盒子，先检查盒子本身的 display 属性的值，存起来。</li>
+<li>如果条件为 true，就把属性值设置了 display 之前存起来的值。</li>
+<li>如果条件为 false，就把属性值设置了 display: none;</li>
+</ol>
+<h2 id="_9">小程序事件</h2>
+<p>input 组件</p>
+<pre><code class="language-jsx">&lt;input value=&quot;666&quot;&gt;&lt;/input&gt;
+</code></pre>
+<h3 id="input">input 组件常用四个事件</h3>
+<p>bindinput    键盘输入时</p>
+<p>bindfocus    获取焦点</p>
+<p>bindblur      失去焦点</p>
+<p>bindconfirm    注意：手机中是点击键盘右下角的完成按钮触发事件，模拟器中是按回车键。</p>
+<h3 id="_10">获取表单值</h3>
+<p>小程序中需要通过事件对象获取</p>
+<p>小程序的事件处理函数也有事件对象，但是和 web 标准的事件对象很不一样。</p>
+<p>获取表单值需要通过   e.detail.value   获取表单值。</p>
+<pre><code class="language-jsx">&lt;input value=&quot;666&quot; bindconfirm=&quot;myConfirmHandle2&quot;&gt;&lt;/input&gt;
+
+Page({
+  myConfirmHandle2(e) {
+    console.log(e);
+    console.log( e.detail.value );
+  }
+})
+</code></pre>
+<h3 id="_11">小程序事件传参</h3>
+<p>小程序不能的事件绑定的时候，绑定事件的属性只能写 函数名，不能直接传参。</p>
+<pre><code class="language-jsx">&lt;button data-index=&quot;{{ index }}&quot; bindtap=&quot;函数名&quot;&gt;列表 {{index}} 的删除按钮&lt;/button&gt;
+</code></pre>
+<p>如何传递参数到事件内部？</p>
+<ol>
+<li>需要在元素上添加自定义属性。</li>
+<li>通过  事件对象的  e.currentTarget.dataset.自定义属性名   获取。</li>
+<li>注意参数的数据类型，如果没有写花括号的自定义属性，默认数据类型是字符串。</li>
+</ol>
+<pre><code class="language-js">  deleteItem(e) {
+    // e.target 代表当前点击的元素
+    console.log(e.currentTarget.dataset.index);
+  }
+</code></pre>
+<h3 id="target-currenttarget">target   和  currentTarget 如何选择</h3>
+<p>当涉及到结构嵌套时，两种情况：</p>
+<p>点父，e.target 和 e.currentTarget  两个没区别；
+点子，e.target 是子，而e.currentTarget 是绑定事件的元素。</p>
+<h4 id="_12">建议</h4>
+<p>尽量使用  <code>e.currentTarget</code>  获取事件参数。</p>
+<h2 id="_13">获取页面栈</h2>
+<p>getCurrentPages() 是一个全局方法，可以获取小程序页面栈情况。</p>
+<pre><code class="language-js">getCurrentPages()
+</code></pre>
+<p>什么时候才会有返回箭头，页面栈中的页面两个以上的时候才会有返回箭头。</p>
+<p>页面栈中最多保存 10 个普通页，到达了 10 个页面后，就无法再跳转普通页了，跳转 tabBar 页不受影响。</p>
+<p>如何实现 tabBar 页的导航也有返回箭头。自己封装一个 tabBar。</p>
+<h2 id="_14">客服系统（免费）</h2>
+<ol>
+<li>小程序端代码  <code>&lt;button open-type="contact"&gt;&lt;/button&gt;</code></li>
+<li>登录小程序后台管理系统 -  功能 - 客服 - 添加客服。</li>
+<li>客服人员登录  https://mpkf.weixin.qq.com/ 就可以接收到用户发给客服的消息了。</li>
+</ol>
+<h2 id="_15">获取用户信息</h2>
+<p>第一次用户点击的时候需要允许授权才能获取。</p>
+<p>如果用户点击了拒绝，下次再点击按钮还是会弹出授权窗口。</p>
+<p>授权过一次后，就不再弹出了。</p>
+<pre><code class="language-jsx">// wxml
+&lt;button open-type=&quot;getUserInfo&quot; bindgetuserinfo=&quot;getMyInfo&quot;&gt;获取用户信息&lt;/button&gt;
+
+// js
+Page({
+    getMyInfo(e){
+        const { userInfo } = e.detail;
+    }
+})
+</code></pre>
+<h2 id="_16">打开页面发生了什么事</h2>
+<p>第一次打开页面会自动执行以下生命周期函数。</p>
+<ol>
+<li>
+<p>监听页面加载   onLoad</p>
+</li>
+<li>
+<p>页面显示  onShow</p>
+</li>
+<li>
+<p>页面初次渲染完成   onReady</p>
+</li>
+</ol>
+<h3 id="onhide">页面隐藏  onHide</h3>
+<ul>
+<li>右上角最小化</li>
+<li>跳转到普通页</li>
+</ul>
+<p>注意点：页面隐藏和页面显示这两个生命周期函数在一个页面中可触发多次。</p>
+<h3 id="onunload">页面卸载 onUnload</h3>
+<ul>
+<li>普通页 出 页面栈 的时候就是卸载。</li>
+<li>普通页 跳转到 tabBar 页，所有普通页都出栈。</li>
+<li>当前普通页，点击右上角返回，当前普通页也要出栈。</li>
+</ul>
+<p>注意点：</p>
+<p>tabBar 页一般不会被卸载的，tabBar 切换要求高性能，你看不到 tabBar 页的时候，其实都是被隐藏了。</p>
+<p>onUnload 注意大小写。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">属性</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">默认值</th>
+<th style="text-align: left;">必填</th>
+<th style="text-align: left;">说明</th>
+<th style="text-align: left;">最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/api/App.html#onLaunch-Object-object">onLaunch</a></td>
+<td style="text-align: left;">function</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">生命周期回调——监听小程序初始化。</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/api/App.html#onShow-Object-object">onShow</a></td>
+<td style="text-align: left;">function</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">生命周期回调——监听小程序启动或切前台。</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/api/App.html#onHide">onHide</a></td>
+<td style="text-align: left;">function</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">生命周期回调——监听小程序切后台。</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>全局的 onShow  和 onHide 主要是在小程序最小化（切后台）和再次进入（切前台）的时候触发。</p>
+<p>页面的的切换不会触发全局 app.js 中的  onShow  和 onHide 。</p>
+<h2 id="_17">引入组件和注册组件</h2>
+<p>小程序中引入和注册组件两个步骤，都是在 json 配置文件中完成的。</p>
+<ol>
+<li>
+<p>编写子组件</p>
+</li>
+<li>
+<p>在子组件的<code>json</code>文件中，将该文件声明为组件</p>
+</li>
+</ol>
+<p><code>{
+     "component": true
+   }</code></p>
+<ol>
+<li>在需要引入的父组件的<code>json</code>文件中，在<code>usingComponents</code>填写引入组件的组件名以及路径</li>
+</ol>
+<p><code>"usingComponents": {
+       "tab-bar": "../../components/tabBar/tabBar"
+     }</code></p>
+<ol>
+<li>在父组件中，直接引入即可</li>
+</ol>
+<p><code>&lt;tab-bar currentpage="index"&gt;&lt;/tab-bar&gt;</code></p>
+<h2 id="_18">使用组件</h2>
+<ol>
+<li>单双标签写法都可以，但是注意标签结束。</li>
+<li>组件名称区别大小写，注册的时候要注意。</li>
+</ol>
+<pre><code class="language-jsx">&lt;!-- 单标签写法 --&gt;
+&lt;search /&gt;
+
+&lt;!-- 双标签写法 --&gt;
+&lt;search&gt;&lt;/search&gt;
+</code></pre>
+<h2 id="_19">选择器注意事项</h2>
+<h3 id="_20">建议</h3>
+<p>尽量不要直接使用 单个标签选择器，建议添加样式的时候通过类选择器。</p>
+<h3 id="_21">原因</h3>
+<pre><code class="language-jsx">1. 小程序的样式自动划分作用域，但是作用域只对类名生效。
+2. 标签选择器会造成样式污染，组件里面的标签选择器会影响到页面的标签选择器。
+</code></pre>
+<h2 id="_22">小程序发送网络请求</h2>
+<ol>
+<li>小程序中没有 XHR 对象，所以不要写 new XMLHttpRequest() 。</li>
+<li>小程序是通过 wx.request( ) API 发起 HTTPS 网络请求（不能发 http 请求）。</li>
+</ol>
+<h3 id="request">小程序的 request 合法域名添加</h3>
+<ol>
+<li>微信开发者工具中，对不合法的域名请求会有报错提示。</li>
+<li>添加 request 合法域名需要登录微信小程序的后台管理系统页面添加。</li>
+</ol>
+<h3 id="_23">合法域名要求</h3>
+<ol>
+<li>必须是 https 的请求，需要证书认证。</li>
+<li>服务器域名需经过 ICP 备案，需要拍照，签保证书等流程。</li>
+<li>不支持 IP 地址，需要买域名。</li>
+</ol>
+<h2 id="this">小程序入口函数的 this 指向</h2>
+<h3 id="page">Page() 入口函数</h3>
+<blockquote>
+<p>在 Page() 入口函数中，this 就是当前页面的实例对象。</p>
+</blockquote>
+<p>了解即可：getCurrentPages() 页面栈数据的最后一项其实就是当前页面的实例。</p>
+<h3 id="_24">页面数据和自定义数据</h3>
+<pre><code class="language-js">Page({
+    // 页面数据 - 和视图更新相关的数据
+    data: {
+
+    },
+    // 自定义数据 - 这个数据不直接用于页面渲染，所以不写到 data 中
+    aaa: 11     
+})
+</code></pre>
+<h3 id="_25">使用规范</h3>
+<p>小程序中，不要把什么数据都放到 data 中，会导致页面性能降低，data 只放和页面渲染相关的数据。</p>
+<p>页面渲染不相干的数据，就写成自定义数据，如：分页的页码如果不需要显示到页面中，就写成自定义数据。</p>
+<h3 id="_26">小程序本地存储</h3>
+<p>小程序的本地存储分为同步写法和异步写法两种。</p>
+<ol>
+<li>同步写法和异步写法都可以实现相同功能。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>同步</th>
+<th>异步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>运行顺序</td>
+<td>从上往下运行，更方便阅读</td>
+<td>异步有回调函数，什么时候结束是不知道的</td>
+</tr>
+<tr>
+<td>获取数据</td>
+<td>通过返回值获取值</td>
+<td>在回调函数中获取数据</td>
+</tr>
+<tr>
+<td>错误捕获</td>
+<td>try catch 捕获错误，防止代码堵塞</td>
+<td>在回调函数中捕获数据</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_27">同步获取写法</h4>
+<pre><code class="language-js">try {
+  // 获取到数据
+  var value = wx.getStorageSync('cate');
+  // 把数据拿来使用
+  if (value) {
+
+  }
+} catch (e) {
+  // 如果上面代码出错了，这里捕获
+}
+</code></pre>
+<h4 id="_28">异步获取写法</h4>
+<pre><code class="language-js">wx.getStorage({
+    // 键名称作为参数
+    key: 'cate',
+    success:(res)=&gt;{
+        // 值在 res 中
+    }
+});
+</code></pre>
+<h2 id="css3">CSS3 新增功能</h2>
+<h3 id="vh-vw">vh vw</h3>
+<pre><code class="language-css">vh     视口高度相对单位，共 100 份，100 vh 就是占满屏幕高。
+vw     视口宽度相对单位，共 100 份，100 vw 就是占满屏幕宽。
+</code></pre>
+<h3 id="calc">calc()</h3>
+<p>calc() 是 CSS3 提供的计算功能，小程序和网页中都支持，允许不同单位的运算。</p>
+<pre><code class="language-js">height: calc(100vh - 100rpx);
+</code></pre>
+<p>坑点：运算符号两边至少打一个空格。</p>
+<h3 id="currentcolor">currentColor</h3>
+<p>颜色关键字，当前文字颜色。</p>
+<pre><code class="language-css">view{
+    color: #0094ff;
+    border: 2rpx solide currentColor;
+}
+</code></pre>
+<h3 id="css3_1">CSS3 变量</h3>
+<p>设计稿，往往会有一定的设计规范，有些颜色是常用的，可以用 CSS 变量定义起来。</p>
+<p>CSS3 变量不仅可用于存放颜色，还可以存放其他 CSS 属性值。</p>
+<p>注意：CSS3 的变量按页面的结构分作用域。</p>
+<pre><code class="language-css">// 定义变量
+page{
+    // 颜色1
+    --primaryColor: '#0094ff';
+    // 颜色2
+    --lightColor: '#b2b2b2';
+    // 颜色3
+    --lightColor: '#888';
+    // 颜色4
+    --semiColor: '#353535';
+}
+
+
+// 使用变量
+view{
+    color: var(--lightColor);
+    background-color: var(--primaryColor);
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  </body>
+</html>

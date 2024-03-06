@@ -1,0 +1,2715 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="qinshij">
+      
+      
+      
+        <link rel="prev" href="../vue%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/">
+      
+      
+        <link rel="next" href="../%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>vue基础 - qinshij's Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vue" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="qinshij&#39;s Docs" class="md-header__button md-logo" aria-label="qinshij's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            qinshij's Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              vue基础
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="qinshij&#39;s Docs" class="md-nav__button md-logo" aria-label="qinshij's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    qinshij's Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    前端笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            前端笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Ajax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ajax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NuxtJs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nuxt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VIM%E7%BC%96%E8%BE%91%E5%99%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vim编辑器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    react
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wx%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微信小程序
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%93%81%E4%BC%98%E8%B4%AD%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    代码规范
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    正则表达式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            CSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/display%E5%92%8Cvisibility%E7%9A%84%E5%85%83%E7%B4%A0%E9%9A%90%E8%97%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Display和visibility的元素隐藏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/flex%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    flex弹性布局
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/float%E5%92%8Cposition%E7%9A%84%E5%B8%83%E5%B1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Float和position的布局
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/padding%2Cmargin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Padding,margin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E4%B8%89%E8%A7%92/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三角形的制作
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E4%BC%98%E5%85%88%E7%BA%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    css优先级
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%8A%A8%E7%94%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    动画
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E5%92%8Cbootstrap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    响应式布局
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%9D%97%E7%BA%A7%EF%BC%8C%E8%A1%8C%E5%86%85%EF%BC%8C%E8%A1%8C%E5%86%85%E5%9D%97%E5%85%83%E7%B4%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    块级，行内，行内块元素
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    复合选择器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%AD%97%E4%BD%93%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%28font%E5%92%8Ctext%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    字体font
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%B1%85%E4%B8%AD%E4%BB%A5%E5%8F%8A%E5%85%B6%E4%BB%96%E5%B8%83%E5%B1%80%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    居中以及其他布局小技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E8%BD%AC%E6%8D%A2%E7%9C%81%E7%95%A5%E5%8F%B7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文本溢出转换省略号
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E8%AE%BE%E7%BD%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    鼠标样式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    移动端
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E8%83%8C%E6%99%AF%E4%B9%9F%E6%98%AF%E4%B8%AA%E5%A4%A7%E5%AD%A6%E9%97%AE%28background%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    background
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Electron
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Electron
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Electron/%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electron包含Chromium和NodeJS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            HTML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/form%E7%9A%84%E4%B8%80%E5%AE%B6%E4%BA%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form表单元素
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/inputAndButton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    inputAndButton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/%E6%9C%89%E5%BA%8F%EF%BC%8C%E6%97%A0%E5%BA%8F%EF%BC%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%97%E8%A1%A8%E4%B8%89%E5%85%84%E5%BC%9F%28list%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/%E6%A0%87%E7%AD%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    标签介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/%E7%BB%93%E6%9E%84%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%AE%80%E5%8D%95%E6%A0%87%E7%AD%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    html
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../HTML/%E8%A7%84%E8%A7%84%E6%95%B4%E6%95%B4%E7%9A%84%E8%A1%A8%E6%A0%BC%28table%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    表格
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    VUE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            VUE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../JSON-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON-server简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mockJs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mockJs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vite-Vue3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vite-Vue3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vue-cli-Vue2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vue-cli-Vue2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vue%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vue代码优化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    vue基础
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模板引擎(art-template)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    jQ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            jQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jQ/jQ%E7%9A%84Ajax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQ的ajax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jQ/jQ%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQ的问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jQ/%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQuery基础
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Js
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            Js
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/JSON/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/NodeJs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NodeJs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/less%E9%A2%84%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    less
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/seo%E4%BC%98%E5%8C%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    seo优化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/%E5%9F%BA%E7%A1%80%E6%B3%A8%E6%84%8F%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    js基础注意点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/%E9%AB%98%E7%BA%A7%E6%B3%A8%E6%84%8F%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    js进阶注意点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    浏览器
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
+            <span class="md-nav__icon md-icon"></span>
+            浏览器
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/BOM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BOM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM_Element/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM_Element
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM_Event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM_Event
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM_document/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM_document
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="vue">vue基础</h1>
+<h1 id="_1">模板语法 插值</h1>
+<ol>
+<li>数据绑定最常见的形式就是使用“<strong>Mustache</strong>”语法 (双大括号) 的文本插值</li>
+</ol>
+<p><code>html
+   &lt;span&gt;Message: {{ 值 }}&lt;/span&gt;</code></p>
+<ol>
+<li>原始 HTML,为了输出真正的 HTML，你需要使用 <code>v-html</code></li>
+</ol>
+<p><code>html
+   &lt;span v-html="值"&gt;&lt;/span&gt;</code></p>
+<ol>
+<li>输出文本，类似text()</li>
+</ol>
+<p><code>html
+   &lt;span v-text="值"&gt;&lt;/span&gt;</code></p>
+<ol>
+<li>Mustache 语法不能作用在 HTML attribute(属性) 上，遇到这种情况应该使用 <code>v-bind</code> 指令</li>
+</ol>
+<p>```html
+   <!-- 完整语法 --></p>
+<p><a v-bind:href="url">...</a></p>
+<!-- 完整语法 -->
+<p><a v-bind:href="url">...</a></p>
+<!-- 完整语法 -->
+<p><a v-bind:href="url">...</a>
+   ```</p>
+<ol>
+<li>
+<p>对于所有的数据绑定，Vue.js 都提供了完全的 JavaScript 表达式支持。有个限制就是，每个绑定都只能包含<strong>单个表达式</strong></p>
+</li>
+<li>
+<p>动态class绑定方法</p>
+</li>
+</ol>
+<p>```html</p>
+<div v-bind:class="{active: isActive}"></div>
+
+<p>// 绑定多个可以用数组形式</p>
+<div v-bind:class="[isShow, {active: isActive}]"></div>
+
+<p>```</p>
+<pre><code class="language-js">data: {
+// 判断是否显示active这个类
+  isActive: true
+}
+
+</code></pre>
+<h1 id="_2">条件渲染 分支</h1>
+<h2 id="v-if"><code>v-if</code></h2>
+<pre><code class="language-html">&lt;h1 v-if=&quot;判断&quot;&gt;Vue is awesome!&lt;/h1&gt;
+</code></pre>
+<p><code>v-if</code> 是一个指令，所以必须将它添加到一个元素上。</p>
+<ul>
+<li>但是如果想切换多个元素呢？此时可以把一个 <code>&lt;template&gt;</code> 元素当做不可见的包裹元素，并在上面使用 <code>v-if</code>。最终的渲染结果将不包含<code>&lt;template&gt;</code>  元素。</li>
+</ul>
+<p><code>html
+  &lt;template v-if="判断"&gt;
+    &lt;h1&gt;Title&lt;/h1&gt;
+    &lt;p&gt;Paragraph 1&lt;/p&gt;
+    &lt;p&gt;Paragraph 2&lt;/p&gt;
+  &lt;/template&gt;</code></p>
+<h3 id="v-else"><code>v-else</code></h3>
+<pre><code class="language-html">&lt;div v-if=&quot;Math.random() &gt; 0.5&quot;&gt;
+  Now you see me
+&lt;/div&gt;
+&lt;div v-else&gt;
+  Now you don't
+&lt;/div&gt;
+</code></pre>
+<p><code>v-else</code> 元素必须紧跟在带 <code>v-if</code> 或者 <code>v-else-if</code> 的元素的后面，否则它将不会被识别。</p>
+<h3 id="v-else-if"><code>v-else-if</code></h3>
+<p>同 <code>v-else</code>条件差不多</p>
+<h2 id="v-show"><code>v-show</code></h2>
+<pre><code class="language-html">&lt;h1 v-show=&quot;ok&quot;&gt;Hello!&lt;/h1&gt;
+</code></pre>
+<p>不同的是带有 <code>v-show</code> 的元素始终会被渲染并保留在 DOM 中。<code>v-show</code> 只是简单地切换元素的 CSS 属性 <code>display</code>。</p>
+<p>注意：</p>
+<ul>
+<li><code>v-show</code> 不支持 <code>元素，也不支持</code>v-else`。</li>
+<li><code>v-if</code> 也是<strong>惰性的</strong>：如果在初始渲染时条件为假，则什么也不做——直到条件第一次变为真时，才会开始渲染条件块。</li>
+<li><code>v-show</code> 就简单得多——不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS 进行切换。</li>
+</ul>
+<h1 id="_3">列表渲染 循环</h1>
+<h2 id="v-for"><code>v-for</code></h2>
+<h3 id="_4">对于数组</h3>
+<p>我们可以用 <code>v-for</code> 指令基于一个数组来渲染一个列表。</p>
+<pre><code class="language-html">&lt;ul id=&quot;example-1&quot;&gt;
+  &lt;li v-for=&quot;item(循环的每一项) in data里的键名&quot;&gt;
+    {{ item.message }}
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<pre><code class="language-js">var example1 = new Vue({
+  el: '#example-1',
+  data: {
+    items: [
+      { message: 'Foo' },
+      { message: 'Bar' }
+    ]
+  }
+})
+</code></pre>
+<ul>
+<li><code>v-for</code> 还支持一个可选的第二个参数，即当前项的索引。</li>
+</ul>
+<p>```html
+<br />
+<ul id="example-2">
+    <li v-for="(item, index) in items">
+      {{ parentMessage }} - {{ index }} - {{ item.message }}
+    </li>
+  </ul></p>
+<p>```</p>
+<h3 id="_5">对于对象</h3>
+<p><code>v-for</code> 来遍历一个对象的属性。</p>
+<pre><code class="language-html">&lt;ul id=&quot;v-for-object&quot; class=&quot;demo&quot;&gt;
+  &lt;li v-for=&quot;value in object&quot;&gt;
+    {{ value }}
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<pre><code class="language-js">new Vue({
+  el: '#v-for-object',
+  data: {
+    object: {
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
+    }
+  }
+})
+</code></pre>
+<p>也可以提供第二个的参数为 property 名称 (也就是键名)：</p>
+<pre><code class="language-html">&lt;div v-for=&quot;(value, name) in object&quot;&gt;
+  {{ name }}: {{ value }}
+&lt;/div&gt;
+</code></pre>
+<p>还可以用第三个参数作为索引：</p>
+<pre><code class="language-html">&lt;div v-for=&quot;(value, name, index) in object&quot;&gt;
+  {{ index }}. {{ name }}: {{ value }}
+&lt;/div&gt;
+</code></pre>
+<h1 id="_6">事件处理</h1>
+<h2 id="_7">行内事件</h2>
+<ul>
+<li>可以用 <code>v-on</code> 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码。</li>
+</ul>
+<pre><code class="language-html">&lt;button v-on:click=&quot;方法名&quot;&gt;Add 1&lt;/button&gt;
+</code></pre>
+<pre><code class="language-js">var example2 = new Vue({
+  el: '#example-2',
+  data: {
+    name: 'Vue.js'
+  },
+  // 在 `methods` 对象中定义方法
+  methods: {
+    greet: function (event) {
+      // `this` 在方法里指向当前 Vue 实例
+      alert('Hello ' + this.name + '!')
+      // `event` 是原生 DOM 事件
+      if (event) {
+        alert(event.target.tagName)
+      }
+    }
+  }
+})
+
+// 也可以用 JavaScript 直接调用方法
+example2.greet() // =&gt; 'Hello Vue.js!'
+</code></pre>
+<p>方法函数放在<strong>methods</strong>对象里</p>
+<ul>
+<li>除了直接绑定到一个方法，也可以在内联 JavaScript 语句中调用方法：</li>
+</ul>
+<pre><code class="language-html">&lt;div id=&quot;example-3&quot;&gt;
+  &lt;button v-on:click=&quot;say('hi')&quot;&gt;Say hi&lt;/button&gt;
+  &lt;button v-on:click=&quot;say('what')&quot;&gt;Say what&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-js">new Vue({
+  el: '#example-3',
+  methods: {
+    say: function (message) {
+      alert(message)
+    }
+  }
+})
+</code></pre>
+<p>点击事件的方法传了参数，原来默认有的事件对象就消失了。</p>
+<ul>
+<li>在内联语句处理器中访问原始的 DOM 事件。可以用特殊变量 <code>$event</code> 把它传入方法</li>
+</ul>
+<pre><code class="language-html">&lt;button v-on:click=&quot;warn('Form cannot be submitted yet.', $event)&quot;&gt;
+  Submit
+&lt;/button&gt;
+</code></pre>
+<pre><code class="language-js">// ...
+methods: {
+  warn: function (message, event) {
+    // 现在我们可以访问原生事件对象
+    if (event) {
+      event.preventDefault()
+    }
+    alert(message)
+  }
+}
+</code></pre>
+<h1 id="_8">表单</h1>
+<p>可以用 <code>v-model</code> 指令在表单<code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>及 <code>&lt;select&gt;</code> 元素上创建双向数据绑定。</p>
+<p>注意点：</p>
+<p><code>v-model</code> 会忽略所有表单元素的 <code>value</code>、<code>checked</code>、<code>selected</code> attribute 的初始值总是将 Vue 实例的数据作为数据来源。你应该通过 JavaScript 在组件的 <code>data</code> 选项中声明初始值。</p>
+<h2 id="_9">文本</h2>
+<pre><code class="language-html">&lt;input v-model=&quot;message&quot; placeholder=&quot;edit me&quot;&gt;
+</code></pre>
+<h2 id="_10">多行文本</h2>
+<pre><code class="language-html">&lt;textarea v-model=&quot;message&quot; placeholder=&quot;add multiple lines&quot;&gt;&lt;/textarea&gt;
+</code></pre>
+<h2 id="_11">复选框</h2>
+<p>单个复选框，v-model="checked"的<code>checked</code>可以得到复选框状态的布尔值</p>
+<pre><code class="language-html">&lt;input type=&quot;checkbox&quot; id=&quot;checkbox&quot; v-model=&quot;checked&quot;&gt;
+</code></pre>
+<p>多个复选框，绑定到同一个数组：</p>
+<pre><code class="language-html">&lt;div id='example-3'&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;jack&quot; value=&quot;Jack&quot; v-model=&quot;checkedNames&quot;&gt;
+  &lt;label for=&quot;jack&quot;&gt;Jack&lt;/label&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;john&quot; value=&quot;John&quot; v-model=&quot;checkedNames&quot;&gt;
+  &lt;label for=&quot;john&quot;&gt;John&lt;/label&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;mike&quot; value=&quot;Mike&quot; v-model=&quot;checkedNames&quot;&gt;
+  &lt;label for=&quot;mike&quot;&gt;Mike&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-js">new Vue({
+  el: '#example-3',
+  data: {
+    checkedNames: []    //数据类型是数组
+  }
+})
+</code></pre>
+<h2 id="_12">单选按钮</h2>
+<pre><code class="language-html">&lt;div id=&quot;example-4&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;one&quot; value=&quot;One&quot; v-model=&quot;picked&quot;&gt;
+  &lt;label for=&quot;one&quot;&gt;One&lt;/label&gt;
+  &lt;br&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;two&quot; value=&quot;Two&quot; v-model=&quot;picked&quot;&gt;
+  &lt;label for=&quot;two&quot;&gt;Two&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-js">new Vue({
+  el: '#example-4',
+  data: {
+    picked: ''
+  }
+})
+</code></pre>
+<h2 id="_13">选择框</h2>
+<pre><code class="language-html">&lt;div id=&quot;example-5&quot;&gt;
+  &lt;select v-model=&quot;selected&quot;&gt;
+    &lt;option disabled value=&quot;&quot;&gt;请选择&lt;/option&gt;
+    &lt;option&gt;A&lt;/option&gt;
+    &lt;option&gt;B&lt;/option&gt;
+    &lt;option&gt;C&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-js">new Vue({
+  el: '...',
+  data: {
+    selected: ''
+  }
+})
+</code></pre>
+<h1 id="_14">计算属性</h1>
+<h2 id="computed">computed</h2>
+<pre><code class="language-html">&lt;div id=&quot;app&quot;&gt;
+    {{ result }}
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-js">const app = new Vue({
+    el:'#app',
+    data:{...}
+    //声明result属性，函数需要有返回值，然后可以result可以和data在模板中渲染。
+    computed:{  
+        result:function（）{
+          return：返回值;
+         }
+    }
+})
+</code></pre>
+<ul>
+<li>
+<p><code>result</code>属于计算属性，computed里的计算属性可以访问this</p>
+</li>
+<li>
+<p>computed里的计算属性还可以观察和响应 Vue 实例上的数据变动</p>
+</li>
+</ul>
+<p><code>js
+  var vm = new Vue({
+    el: '#demo',
+    data: {
+      firstName: 'Foo',
+      lastName: 'Bar'
+    },
+    computed: {
+      fullName: function () {
+        return this.firstName + ' ' + this.lastName
+      }
+    }
+  })</code></p>
+<p>fullName计算属性可以根据 firstName 和 lastName 的变化做出实时响应</p>
+<p><strong>注意点：</strong></p>
+<ul>
+<li>computed的属性去进行v-model绑定，没法实现双向绑定</li>
+</ul>
+<h2 id="watch">watch</h2>
+<p>监听属性 <strong>watch</strong>也能实现根据 firstName 和 lastName 的变化做出实时响应</p>
+<p><code>js
+  var vm = new Vue({
+    el: '#demo',
+    data: {
+      firstName: 'Foo',
+      lastName: 'Bar',
+      fullName: 'Foo Bar'
+    },
+    watch: {
+      firstName: function (newValue,oldValue) {
+        this.fullName = val + ' ' + this.lastName
+      },
+      lastName: function (val) {
+        this.fullName = this.firstName + ' ' + val
+      }
+    }
+  })</code></p>
+<p>watch 里的方法有两个参数，第一个是属性的新值，第二个是旧值。</p>
+<p>### 监听对象</p>
+<p>改变对象的键值时，对象本身并没有改变(值内存地址没有发生变化)，所以之前的方法不能监听到对象的键值发生变化。</p>
+<pre><code class="language-js">var vm = new Vue({
+    el: '#demo',
+    data: {
+      user:{
+          name:'小明'
+      }
+    },
+    watch: {
+     //需要这么写才能监听到键值的改变
+     'user.name':function(){
+         ......
+     }
+})
+</code></pre>
+<h4 id="_15">深度监听(了解)</h4>
+<pre><code class="language-js">var vm = new Vue({
+    el: '#demo',
+    data: {
+      user:{
+          name:'小明'
+      }
+    },
+    watch: {
+        //1次性监听对象内部所有属性的话，可以使用deep进行深度监听
+        user:{
+            //固定的声明
+            deep:ture,
+            //handler也是固定的函数，表示监听属性的函数
+            handler:function(){
+                ......
+            }
+        }
+     }
+})
+</code></pre>
+<h1 id="_16">组件</h1>
+<p>通过<code>Vue.component()</code>方法创建一个组件(全局组件)</p>
+<ul>
+<li>
+<p><code>Vue.component()</code>中第一个参数是组件名，必须的，不能使用大写字母。</p>
+</li>
+<li>
+<p><code>template</code>属性是第二个参数对象中必须的。</p>
+</li>
+</ul>
+<pre><code class="language-js">// 定义一个名为 button-counter 的新组件
+Vue.component('button-counter', {
+  data: function () {
+    return {
+      count: 0
+    }
+  },
+  template: '&lt;button v-on:click=&quot;count++&quot;&gt;You clicked me {{ count }} times.&lt;/button&gt;'
+})
+</code></pre>
+<p>引用组件</p>
+<pre><code class="language-html">&lt;div id=&quot;components-demo&quot;&gt;
+  &lt;button-counter&gt;&lt;/button-counter&gt;
+&lt;/div&gt;
+</code></pre>
+<p>通过 <code>new Vue</code> 创建的 Vue 根实例，把这个组件作为自定义元素来使用</p>
+<pre><code class="language-js">new Vue({ el: '#components-demo' })
+</code></pre>
+<h2 id="_17">局部组件</h2>
+<p>上面方法创建的是全局组件</p>
+<p>局部创建组件的方法：</p>
+<ol>
+<li>创建局部组件</li>
+</ol>
+<p><code>js
+   var ComponentA = { 
+    template: "&lt;div&gt;hello 第一个组件&lt;/div&gt;"
+   }
+   var ComponentB = { /* ... */ }
+   var ComponentC = { /* ... */ }</code></p>
+<blockquote>
+<p>模板(template)里面不能有多个同级标签</p>
+</blockquote>
+<ol>
+<li>在 <code>components</code> 选项中定义你想要使用的组件</li>
+</ol>
+<p><code>js
+   new Vue({
+     el: '#app',
+     components: {
+       'component-a': ComponentA,
+       'component-b': ComponentB
+     }
+   })</code></p>
+<ul>
+<li>
+<p>对于 <code>components</code> 对象中的每个属性来说，其属性名就是自定义元素的名字</p>
+</li>
+<li>
+<p>其属性值就是声明组件的对象</p>
+</li>
+</ul>
+<h2 id="_18">组件里面的属性</h2>
+<h3 id="data">data</h3>
+<p><strong>一个组件的 <code>data</code> 选项必须是一个函数</strong></p>
+<pre><code class="language-js">data: function () {
+  return {
+    // 定义的data数据
+    count: 0
+  }
+}
+</code></pre>
+<p>如果 Vue 没有这条规则,可能会影响到其它所有实例。因为组件具有复用性，可以调用多次,作者在设计组件时候为了组件内部的数据都是独立。</p>
+<blockquote>
+<p>除了<code>data</code>的定义不一样其他都跟原来的一样</p>
+</blockquote>
+<h2 id="prop">Prop 传递数据</h2>
+<p>Prop 是你可以在组件上注册的一些自定义 attribute。当一个值传递给一个 prop attribute 的时候，它就变成了那个组件实例的一个属性</p>
+<pre><code class="language-js">Vue.component('blog-post', {
+  props: ['title'],
+  template: '&lt;h3&gt;{{ title }}&lt;/h3&gt;'
+})
+</code></pre>
+<p>一个组件默认可以拥有任意数量的 prop，任何值都可以传递给任何 prop。在上述模板中，你会发现我们能够在组件实例中访问这个值</p>
+<p>一个 prop 被注册之后，你就可以像这样把数据作为一个自定义 attribute 传递进来：</p>
+<pre><code class="language-html">&lt;blog-post title=&quot;My journey with Vue&quot;&gt;&lt;/blog-post&gt;
+&lt;blog-post title=&quot;Blogging with Vue&quot;&gt;&lt;/blog-post&gt;
+&lt;blog-post title=&quot;Why Vue is so fun&quot;&gt;&lt;/blog-post&gt;
+</code></pre>
+<h3 id="prop_1">传递动态prop</h3>
+<p>在一个典型的应用中，你可能在 <code>data</code> 里有一个posts的数组</p>
+<pre><code class="language-js">new Vue({
+  el: '#blog-post-demo',
+  data: {
+    posts: [
+      { id: 1, title: 'My journey with Vue' },
+      { id: 2, title: 'Blogging with Vue' },
+      { id: 3, title: 'Why Vue is so fun' }
+    ]
+  }
+})
+</code></pre>
+<p>并想要为每个posts里的对象渲染一个组件：</p>
+<pre><code class="language-html">&lt;blog-post
+  v-for=&quot;post in posts&quot;
+  v-bind:key=&quot;post.id&quot;
+  v-bind:title=&quot;post.title&quot;
+&gt;&lt;/blog-post&gt;
+</code></pre>
+<pre><code class="language-html">&lt;!-- 传入一个静态的值 --&gt;
+&lt;blog-post title=&quot;My journey with Vue&quot;&gt;&lt;/blog-post&gt;
+
+&lt;!-- 动态赋予一个变量的值 --&gt;
+&lt;blog-post v-bind:title=&quot;post.title&quot;&gt;&lt;/blog-post&gt;
+
+&lt;!-- 动态赋予一个复杂表达式的值 --&gt;
+&lt;blog-post
+  v-bind:title=&quot;post.title + ' by ' + post.author.name&quot;
+&gt;&lt;/blog-post&gt;
+
+&lt;!-- 传入一个数字 --&gt;
+&lt;!-- 即便 `42` 是静态的，我们仍然需要 `v-bind` 来告诉 Vue --&gt;
+&lt;!-- 这是一个 JavaScript 表达式而不是一个字符串。--&gt;
+&lt;blog-post v-bind:likes=&quot;42&quot;&gt;&lt;/blog-post&gt;
+&lt;!-- 用一个变量进行动态赋值。--&gt;
+&lt;blog-post v-bind:likes=&quot;post.likes&quot;&gt;&lt;/blog-post&gt;
+
+&lt;!-- 传入一个布尔值 --&gt;
+&lt;!-- 包含该 prop 没有值的情况在内，都意味着 `true`。--&gt;
+&lt;blog-post is-published&gt;&lt;/blog-post&gt;
+&lt;!-- 即便 `false` 是静态的，我们仍然需要 `v-bind` 来告诉 Vue --&gt;
+&lt;!-- 这是一个 JavaScript 表达式而不是一个字符串。--&gt;
+&lt;blog-post v-bind:is-published=&quot;false&quot;&gt;&lt;/blog-post&gt;
+&lt;!-- 用一个变量进行动态赋值。--&gt;
+&lt;blog-post v-bind:is-published=&quot;post.isPublished&quot;&gt;&lt;/blog-post&gt;
+
+&lt;!-- 传入一个数组 --&gt;
+&lt;!-- 即便数组是静态的，我们仍然需要 `v-bind` 来告诉 Vue --&gt;
+&lt;!-- 这是一个 JavaScript 表达式而不是一个字符串。--&gt;
+&lt;blog-post v-bind:comment-ids=&quot;[234, 266, 273]&quot;&gt;&lt;/blog-post&gt;
+&lt;!-- 用一个变量进行动态赋值。--&gt;
+&lt;blog-post v-bind:comment-ids=&quot;post.commentIds&quot;&gt;&lt;/blog-post&gt;
+
+&lt;!-- 传入一个对象 --&gt;
+&lt;!-- 即便对象是静态的，我们仍然需要 `v-bind` 来告诉 Vue --&gt;
+&lt;!-- 这是一个 JavaScript 表达式而不是一个字符串。--&gt;
+&lt;blog-post
+  v-bind:author=&quot;{
+    name: 'Veronica',
+    company: 'Veridian Dynamics'
+  }&quot;
+&gt;&lt;/blog-post&gt;
+&lt;!-- 用一个变量进行动态赋值。--&gt;
+&lt;blog-post v-bind:author=&quot;post.author&quot;&gt;&lt;/blog-post&gt;
+</code></pre>
+<h2 id="_19">组件传递事件</h2>
+<p>父组件声明事件</p>
+<pre><code class="language-js">new Vue({
+  el: '#app',
+  methods:{
+      handleClick:function(形参){
+          ......
+      }
+  }
+})
+</code></pre>
+<p>在组件中传递事件</p>
+<pre><code class="language-html">&lt;goods @myclick='handleClick'&gt;&lt;/goods&gt;
+</code></pre>
+<p>在子组件中接收事件</p>
+<pre><code class="language-js">Vue.component('goods', {
+    methods:{
+        方法名：function(){
+        this.$emit('myclick'，函数实参)    //可以在子组件把实参传给父组件
+        }
+    },
+    template:`&lt;div&gt;
+        子组件
+    &lt;/div`
+})
+</code></pre>
+<h1 id="solt">插槽<code>solt</code></h1>
+<pre><code class="language-html">&lt;!-- 子组件 ： (假设名为：ebutton) --&gt;
+&lt;template&gt;
+  &lt;div class= 'button'&gt;
+      &lt;button&gt;点击&lt;/button&gt;
+      //slot 可以放在任意位置。（这个位置就是父组件添加内容的显示位置）
+      &lt;slot&gt;&lt;/slot&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+
+
+&lt;!-- 父组件：（引用子组件 ebutton） --&gt;
+&lt;template&gt;
+  &lt;div class= 'app'&gt;
+     &lt;ebutton&gt;
+       &lt;div&gt;传给子组件的元素&lt;/div&gt;
+     &lt;/ebutton&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<h2 id="slot"><code>slot</code>设置默认值</h2>
+<pre><code class="language-html">&lt;template&gt;
+  &lt;div class= 'button'&gt;
+      &lt;button&gt;  &lt;/button&gt;
+      &lt;slot&gt; 这就是默认值 &lt;/slot&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<h2 id="_20">指定具体插槽</h2>
+<p>子组件设置<code>name</code>属性绑定，父组件通过在<code>template</code>标签上用<code>v-slot:自定义的name</code>控制</p>
+<pre><code class="language-html">&lt;!-- 子组件 ： (假设名为：ebutton) --&gt;
+&lt;template&gt;
+  &lt;div class= 'button'&gt;
+      &lt;button&gt;  &lt;/button&gt;
+      &lt;slot name= 'one'&gt; 这就是默认值1&lt;/slot&gt;
+      &lt;slot name='two'&gt; 这就是默认值2 &lt;/slot&gt;
+      &lt;slot name='three'&gt; 这就是默认值3 &lt;/slot&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<pre><code class="language-html">&lt;!-- 父组件：（引用子组件 ebutton） --&gt;
+&lt;template&gt;
+  &lt;div class= 'app'&gt;
+     &lt;ebutton&gt; 
+        &lt;template v-slot:one&gt; 这是插入到one插槽的内容 &lt;/template&gt;
+        &lt;template v-slot:two&gt; 这是插入到two插槽的内容 &lt;/template&gt;
+        &lt;template v-slot:three&gt; 这是插入到three插槽的内容 &lt;/template&gt;
+     &lt;/ebutton&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<h2 id="_21">子组件通过插槽传递数据给父组件使用</h2>
+<pre><code class="language-html">&lt;!-- 子组件 --&gt;
+&lt;template&gt;
+  &lt;div class= 'button'&gt;
+      &lt;button&gt;点击&lt;/button&gt;
+      &lt;!-- 自定义mark获取变量num数据 --&gt;
+      &lt;slot :mark=&quot;num&quot;&gt;&lt;/slot&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;!-- 父组件 --&gt;
+&lt;template&gt;
+  &lt;div class= 'app'&gt;
+     &lt;ebutton&gt;
+       &lt;template v-slot:default=&quot;data&quot;&gt;
+         &lt;!-- 通过data,mark获取传递的数据 --&gt;
+         &lt;div&gt;子组件传递的元素 {{ data,mark }}&lt;/div&gt;
+       &lt;/template&gt;
+     &lt;/ebutton&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<h4 id="_22">传递多个数据</h4>
+<pre><code class="language-html">&lt;!-- 子组件 --&gt;
+ &lt;slot :mark1=&quot;num&quot; mark2=&quot;hello&quot;&gt;&lt;/slot&gt;
+
+&lt;!-- 父组件 --&gt;
+ &lt;ebutton&gt;
+     &lt;template v-slot:default=&quot;{ mark1, mark2 }&quot;&gt;
+       &lt;div&gt;子组件传递的元素 {{ mark1 }}+{{ mark2 }}&lt;/div&gt;
+     &lt;/template&gt;
+&lt;/ebutton&gt;
+</code></pre>
+<p><strong><code>v-slot:</code>可以简写<code>#</code>，列如：<code>v-slot:one</code> 简写 <code>#one</code></strong></p>
+<h1 id="_23">路由</h1>
+<p>要先导入特定的包</p>
+<pre><code class="language-html">&lt;script src=&quot;https://unpkg.com/vue-router/dist/vue-router.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<ol>
+<li>创建模板</li>
+</ol>
+<p><code>``js
+   const login = {
+       template:</code>
+          <h3>显示login</h3>
+       `
+   }</p>
+<p>const user = {
+      template: <code>&lt;div&gt;显示user&lt;/div&gt;</code>
+   }
+   ```</p>
+<ol>
+<li>
+<p>添加到路由的构造函数上</p>
+</li>
+<li>
+<p>在new路由对象的时候可以传递一个配置对象，这个配置对象的route表示路由器的匹配规则</p>
+</li>
+<li>每个路由规则都是一个对象，这个规则对象身上必须有两个属性<ul>
+<li>属性1 path表示监听哪个路由链接地址</li>
+<li>属性2 component，表示如果路由是前面匹配到的path，则展示component属性对应的组件，component属性值必须是一个组件模板对象，不能是组件的引用名称</li>
+</ul>
+</li>
+</ol>
+<p><code>js
+   const router = new VueRouter({
+      routes: [
+         { path: '/user', component: user },
+         { path: '/login', component: login }
+      ]
+   });</code></p>
+<ol>
+<li>将路由规则对象注册到Vue实例上</li>
+</ol>
+<p><code>js
+   const app = new Vue({
+               el: "#app",
+               router:router
+   })</code></p>
+<ol>
+<li>在页面中挖坑，显示组件数据</li>
+</ol>
+<p><code>html
+   &lt;router-view&gt;&lt;/router-view&gt;</code></p>
+<ol>
+<li>
+<p>可以用一下两个方法显示出组件数据</p>
+</li>
+<li>
+<p>在搜索栏输入对应的匹配规则 <code>地址#/login</code></p>
+</li>
+<li>
+<p>使用vue官方提供的router-link元素使用，它默认渲染为一个a标签</p>
+<p><code>html
+  &lt;router-link to="/login"&gt;登录&lt;/router-link&gt;</code></p>
+</li>
+</ol>
+<h2 id="_24">路由重定向</h2>
+<pre><code class="language-js">const router = new VueRouter({
+   routes: [
+     { path: '/', redirect: &quot;login&quot; },  //路由redirect重定向，设置默认组件
+     { path: '/user', component: user },
+     { path: '/login', component: login }
+   ]
+});
+</code></pre>
+<h2 id="_25">路由嵌套</h2>
+<p>创建子组件</p>
+<pre><code class="language-js">const child = {
+   template: `
+    &lt;p&gt;child出来啦&lt;/p&gt;
+   `
+}
+</code></pre>
+<p>使用children属性实现路由嵌套,子路由path前不要加/，否则永远以根路径开始请求</p>
+<pre><code class="language-js">const router = new VueRouter({
+  routes: [
+  {
+     path: '/user', component: user,
+     children: [
+     { path: 'child', component: child }
+     ]
+  }
+});
+</code></pre>
+<p>子组件显示出来和上面把组件显示出来方法一样</p>
+<h2 id="_26">路由传参</h2>
+<p>子组件的<code>this.$route</code>里面有路由传递过来的参数</p>
+<p>在<code>路径?id=123</code>里可以通过<code>this.$route.query</code>这个对象里面拿到参数。</p>
+<h3 id="_27">动态路由参数</h3>
+<p>在设置路由规则的地方加上<code>/:参数名</code></p>
+<pre><code class="language-js">{path:'/login/:id',component:login},
+</code></pre>
+<pre><code class="language-html">&lt;router-link to=&quot;/login/12&quot;&gt;登录&lt;/router-link&gt;
+</code></pre>
+<p>通过params方式传递路由参数，login后面会被解析为id的值,可以在<code>this.$route.params</code>这个对象里面拿到参数</p>
+<h2 id="_28">路由的方法</h2>
+<p><code>this.$router</code>：属性可以调用路由对象的方法，比如跳转到下一页和返回上一页。</p>
+<ol>
+<li>
+<p><code>this.$router.push</code>方法实现跳转，该函数参数接收要跳转的路径，</p>
+</li>
+<li>
+<p>通过<code>name</code>传递参数，<strong>用params拿数据</strong></p>
+<p>```js
+  //A页面: 
+  this.$router.push({
+      name: '页面B',
+      params: { data: '我是要传递的参数' }
+  })</p>
+<p>//B页面拿到传来的值: 
+  this.data = this.$route.params.data // 拿到上个页面传来的数据
+  <code>2. 通过`path`传递参数，**用query拿数据**</code>js
+  //A页面: 
+  this.$router.push({
+      path: '/页面B',
+      query: { data: '我是要传递的参数' }
+  })</p>
+<p>//B页面拿到传来的值: 
+  this.data = this.$route.query.data // 拿到上个页面传来的数据</p>
+</li>
+<li>
+<p><code>this.$router.back</code>方法实现返回上一页</p>
+</li>
+<li>
+<p><code>this.$router.replace</code>方法替换当前页面，无法使用.back()返回</p>
+</li>
+</ol>
+<h1 id="axios">axios</h1>
+<h2 id="get">get请求</h2>
+<pre><code class="language-js">const axios = require('axios');
+
+axios.get('/user?ID=12345')
+  // 请求成功
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  // 请求失败
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  // 总会运行这个方法
+  .finally(function () {
+    // always executed
+  });
+
+
+// 使用params传参
+axios.get('/user', {
+    params: {
+      ID: 12345
+    }
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+  .finally(function () {
+    // always executed
+  });  
+
+
+// 使用异步的方法
+async function getUser() {
+  try {
+    const response = await axios.get('/user?ID=12345');
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+
+// 又或者
+axios({
+  method: 'post',
+  url: '/user/12345',
+  data: {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  }
+});
+
+
+// Send a GET request (default method)
+axios('/user/12345');
+
+</code></pre>
+<h2 id="post">post请求</h2>
+<p>post传参数使用的是data</p>
+<pre><code class="language-js">axios.post('/user', {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+// 用data传参
+axios({
+  method: 'post',
+  url: '/user/12345',
+  data: {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  }
+});
+</code></pre>
+<h2 id="_29">其他传参情况</h2>
+<ol>
+<li>执行多个并发请求</li>
+</ol>
+<pre><code class="language-js">function getUserAccount() {
+  return axios.get('/user/12345');
+}
+
+function getUserPermissions() {
+  return axios.get('/user/12345/permissions');
+}
+
+const [acct, perm] = await Promise.all([getUserAccount(), getUserPermissions()]);
+
+// OR
+
+Promise.all([getUserAccount(), getUserPermissions()])
+  .then(function ([acct, perm]) {
+    // ...
+  });
+</code></pre>
+<ol>
+<li>将 HTML 表单作为 JSON 发送</li>
+</ol>
+<pre><code class="language-js">const {data} = await axios.post('/user', document.querySelector('#my-form'), {
+  headers: {
+    'Content-Type': 'application/json'
+  }
+})
+</code></pre>
+<h2 id="axios_1">自定义axios实例</h2>
+<pre><code class="language-js">const instance = axios.create({
+  baseURL: 'https://some-domain.com/api/',
+  timeout: 1000,
+  headers: {'X-Custom-Header': 'foobar'}
+});
+</code></pre>
+<h2 id="axios_2">全局挂载axios</h2>
+<h3 id="vue3">vue3</h3>
+<p>入口文件main.js配置globalProperties挂载全局方法对象</p>
+<p>main.js</p>
+<pre><code class="language-js">import { createApp } from 'vue'
+import App from './app.vue'
+import axios from 'axios'
+
+const instance = axios.create({
+    baseURL: 'http://localhost:3000/posts'
+});
+
+const app = createApp(App);
+app.mount('#app');
+app.config.globalProperties.$http = instance;
+</code></pre>
+<p>使用getCurrentInstanceAPI获取全局对象</p>
+<pre><code class="language-js">// 组件文件中
+
+import { getCurrentInstance } from 'vue'
+
+// 方法1
+const currentInstance = getCurrentInstance()
+const { $http } = currentInstance.appContext.config.globalProperties;
+
+console.log($http().then((res)=&gt;console.log(res.data)))
+
+// 方法2
+const { proxy } = getCurrentInstance()
+console.log(proxy.$http().then((res)=&gt;console.log(res.data)))
+
+</code></pre>
+<h3 id="vue2">vue2</h3>
+<p>入口文件main.js配置Vue.prototype挂载全局方法对象</p>
+<p>main.js</p>
+<pre><code class="language-js">import Vue from 'vue'
+import Axios from 'axios'
+import App from './App.vue'
+
+// ...
+
+/* 挂载全局对象 start */
+Vue.prototype.$http = Axios;
+/* 挂载全局对象 end */
+
+new Vue({
+  render: h =&gt; h(App)
+}).$mount('#app')
+</code></pre>
+<p>使用this.$http</p>
+<pre><code class="language-js">export default {
+    data() {
+      return {
+        list: []
+      }
+    },
+    mounted() {
+      this.getList()
+    },
+    methods: {
+      getList() {
+        this.$http({
+          url: '/api/v1/posts/list'
+        }).then(res=&gt;{
+          let { data } = res.data
+          this.list = data
+        })
+      },
+    },
+  }
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  </body>
+</html>

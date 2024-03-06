@@ -1,0 +1,2328 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="qinshij">
+      
+      
+      
+        <link rel="prev" href="../%E6%A0%87%E7%AD%BE/">
+      
+      
+        <link rel="next" href="../%E8%A7%84%E8%A7%84%E6%95%B4%E6%95%B4%E7%9A%84%E8%A1%A8%E6%A0%BC%28table%29/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>html - qinshij's Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#html" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="qinshij&#39;s Docs" class="md-header__button md-logo" aria-label="qinshij's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            qinshij's Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              html
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="qinshij&#39;s Docs" class="md-nav__button md-logo" aria-label="qinshij's Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    qinshij's Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    前端笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            前端笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Ajax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ajax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NuxtJs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nuxt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VIM%E7%BC%96%E8%BE%91%E5%99%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vim编辑器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    react
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wx%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微信小程序
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%93%81%E4%BC%98%E8%B4%AD%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    代码规范
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    正则表达式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            CSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/display%E5%92%8Cvisibility%E7%9A%84%E5%85%83%E7%B4%A0%E9%9A%90%E8%97%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Display和visibility的元素隐藏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/flex%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    flex弹性布局
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/float%E5%92%8Cposition%E7%9A%84%E5%B8%83%E5%B1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Float和position的布局
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/padding%2Cmargin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Padding,margin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E4%B8%89%E8%A7%92/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三角形的制作
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E4%BC%98%E5%85%88%E7%BA%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    css优先级
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%8A%A8%E7%94%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    动画
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E5%92%8Cbootstrap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    响应式布局
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%9D%97%E7%BA%A7%EF%BC%8C%E8%A1%8C%E5%86%85%EF%BC%8C%E8%A1%8C%E5%86%85%E5%9D%97%E5%85%83%E7%B4%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    块级，行内，行内块元素
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    复合选择器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%AD%97%E4%BD%93%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE%28font%E5%92%8Ctext%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    字体font
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E5%B1%85%E4%B8%AD%E4%BB%A5%E5%8F%8A%E5%85%B6%E4%BB%96%E5%B8%83%E5%B1%80%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    居中以及其他布局小技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E8%BD%AC%E6%8D%A2%E7%9C%81%E7%95%A5%E5%8F%B7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文本溢出转换省略号
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E8%AE%BE%E7%BD%AE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    鼠标样式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    移动端
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSS/%E8%83%8C%E6%99%AF%E4%B9%9F%E6%98%AF%E4%B8%AA%E5%A4%A7%E5%AD%A6%E9%97%AE%28background%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    background
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Electron
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Electron
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Electron/%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electron包含Chromium和NodeJS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HTML
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            HTML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../form%E7%9A%84%E4%B8%80%E5%AE%B6%E4%BA%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form表单元素
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inputAndButton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    inputAndButton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%89%E5%BA%8F%EF%BC%8C%E6%97%A0%E5%BA%8F%EF%BC%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%97%E8%A1%A8%E4%B8%89%E5%85%84%E5%BC%9F%28list%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A0%87%E7%AD%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    标签介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    html
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    html
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#html_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      在html文件中，结构实际上是有两种结构关系
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emmethtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      用emmet语法快捷生成html基本骨架
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      标签
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="标签">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#h1h6" class="md-nav__link">
+    <span class="md-ellipsis">
+      标题标签(h1~h6)的特点：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    <span class="md-ellipsis">
+      段落标签(p)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#br" class="md-nav__link">
+    <span class="md-ellipsis">
+      换行标签(br单标签)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hr" class="md-nav__link">
+    <span class="md-ellipsis">
+      水平线标签(hr单标签)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      文本格式化标签
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      无语义化但很重要的标签
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="无语义化但很重要的标签">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#div" class="md-nav__link">
+    <span class="md-ellipsis">
+      div
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#span" class="md-nav__link">
+    <span class="md-ellipsis">
+      span
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      多媒体标签
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="多媒体标签">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#img" class="md-nav__link">
+    <span class="md-ellipsis">
+      img标签
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      超链接标签(a)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h5" class="md-nav__link">
+    <span class="md-ellipsis">
+      h5新增语义化标签
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="h5新增语义化标签">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增的多媒体标签主要包含两个：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%A7%84%E8%A7%84%E6%95%B4%E6%95%B4%E7%9A%84%E8%A1%A8%E6%A0%BC%28table%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    表格
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    VUE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            VUE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VUE/JSON-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON-server简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VUE/mockJs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mockJs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VUE/vite-Vue3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vite-Vue3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VUE/vue-cli-Vue2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vue-cli-Vue2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VUE/vue%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vue代码优化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VUE/vue%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vue基础
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VUE/%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模板引擎(art-template)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    jQ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            jQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jQ/jQ%E7%9A%84Ajax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQ的ajax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jQ/jQ%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQ的问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jQ/%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    jQuery基础
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Js
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            Js
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/JSON/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/NodeJs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NodeJs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/less%E9%A2%84%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    less
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/seo%E4%BC%98%E5%8C%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    seo优化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/%E5%9F%BA%E7%A1%80%E6%B3%A8%E6%84%8F%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    js基础注意点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../js/%E9%AB%98%E7%BA%A7%E6%B3%A8%E6%84%8F%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    js进阶注意点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    浏览器
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
+            <span class="md-nav__icon md-icon"></span>
+            浏览器
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/BOM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BOM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM_Element/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM_Element
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM_Event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM_Event
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8F%E8%A7%88%E5%99%A8/DOM_document/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM_document
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#html_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      在html文件中，结构实际上是有两种结构关系
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emmethtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      用emmet语法快捷生成html基本骨架
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      标签
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="标签">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#h1h6" class="md-nav__link">
+    <span class="md-ellipsis">
+      标题标签(h1~h6)的特点：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p" class="md-nav__link">
+    <span class="md-ellipsis">
+      段落标签(p)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#br" class="md-nav__link">
+    <span class="md-ellipsis">
+      换行标签(br单标签)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hr" class="md-nav__link">
+    <span class="md-ellipsis">
+      水平线标签(hr单标签)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      文本格式化标签
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      无语义化但很重要的标签
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="无语义化但很重要的标签">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#div" class="md-nav__link">
+    <span class="md-ellipsis">
+      div
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#span" class="md-nav__link">
+    <span class="md-ellipsis">
+      span
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      多媒体标签
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="多媒体标签">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#img" class="md-nav__link">
+    <span class="md-ellipsis">
+      img标签
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      超链接标签(a)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h5" class="md-nav__link">
+    <span class="md-ellipsis">
+      h5新增语义化标签
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="h5新增语义化标签">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增的多媒体标签主要包含两个：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="html">html</h1>
+<h2 id="html_1">在html文件中，结构实际上是有两种结构关系</h2>
+<pre><code>1. 并列关系----兄弟关系
+2. 嵌套（包含）关系----父子关系
+</code></pre>
+<h2 id="emmethtml">用emmet语法快捷生成html基本骨架</h2>
+<pre><code>* 后缀名必须是html
+
+* `!`(英文符号) + enter
+
+* `&lt;!DOCTYPE html&gt;` 文档声明类型标签，该文档是按照html5的版本去解析
+
+* ' &lt;html lang="en"&gt; ' language语言 en - English , zh-CN - 中文
+
+* ' &lt;meta charset="UTF-8"&gt; ' 字符编码格式
+
+* ' &lt;meta name="viewport" content="width=device-width,initial-scale=1.0"&gt; ' 浏览器视口，'width = device-width'(设备宽度)，'initial-scale=1.0'(初始化缩放)
+
+* ' &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt; ' 在windown系统中使用ie最高版本的浏览器edge打开
+
+* 虽然一些内容写在body外也能显示，但还是推荐大家写在body标签中方便管理
+</code></pre>
+<p><strong>翻译会导致出现非自己写的元素</strong></p>
+<blockquote>
+<p>emmet 便捷语法
+    &gt;&gt; emmet中<code>*</code>是批量生成对应结构 ：h1<em>6
+    &gt;&gt; <code>$</code>代表自增的正整数 ： h$</em>6 快速生成递增的结构
+    &gt;&gt; 在标签中插入文字内容 <code>{}</code>插入内容 ： h1*6{我是h$标签}
+    &gt;&gt; <code>+</code> 生成兄弟标签</p>
+</blockquote>
+<h2 id="_1">标签</h2>
+<h3 id="h1h6">标题标签(h1~h6)的特点：</h3>
+<pre><code>1. 随着字体的增大，字体大小会变得越来越小，甚至会小到比默认字体大小还小。
+
+2. 所有标题标签里面的内容都会加粗显示。
+
+3. 标题标签独占一行。
+
+4. 并且行与行之间的间距会变得很大（默认的外边距引起的）
+
+5. 在实际开发过程中，Web规范规定一个网页只允许出现一个' &lt;h1&gt; '标签。就是为了强调当前网页的主题内容不被其他内容混淆。提高搜索引擎搜到我们网页的概率，提高网站的排名。
+</code></pre>
+<h3 id="p">段落标签(<code>p</code>)</h3>
+<pre><code>1. 段落标签实际上就是处理文章中段落的标签
+
+2. 还可以换行显示段落
+
+3. 不同段落之间有较大的间距
+</code></pre>
+<p><strong>一大段没有空格的无意义的数字或者是字母集合会被当成一个整体，不进行换行</strong>
+<strong>全角空格是不会受浏览器合并多个空格和换行影响的。全角空格是一个中文字符的大小。</strong></p>
+<h3 id="br">换行标签(<code>br</code>单标签)</h3>
+<pre><code>1. html中遇到' br '标签会强制换行
+
+2. 与段落标签不同的是，' br '的换行不会有较大的间隔，就像普通的文本换行一样去显示
+</code></pre>
+<h3 id="hr">水平线标签(<code>hr</code>单标签)</h3>
+<pre><code>1. 用来区分不同结构的水平线分割
+</code></pre>
+<h3 id="_2">文本格式化标签</h3>
+<pre><code>* ' &lt;strong&gt;&lt;/strong&gt; ' (语义更强烈) / ' &lt;b&gt;&lt;/b&gt; ' 加粗
+
+* ' &lt;em&gt;&lt;/em&gt; ' (语义更强烈) / ' &lt;i&gt;&lt;/i&gt; ' 倾斜
+
+* ' &lt;del&gt;&lt;/del&gt; ' (语义更强烈) / ' &lt;s&gt;&lt;/s&gt; ' 删除线
+
+* ' &lt;ins&gt;&lt;/ins&gt; ' (语义更强烈) / ' &lt;u&gt;&lt;/u&gt; ' 下划线
+</code></pre>
+<h3 id="_3">无语义化但很重要的标签</h3>
+<h4 id="div">div</h4>
+<pre><code>1. 块级元素，独占一整行
+
+2. 上下正常间距。
+</code></pre>
+<h4 id="span">span</h4>
+<pre><code>1. 行内元素，可以和其他行内元素在一行显示
+
+2. 宽度由内容撑开。
+</code></pre>
+<h3 id="_4">多媒体标签</h3>
+<h4 id="img"><code>img</code>标签</h4>
+<pre><code>* 'src'属性 路径
+
+&gt; 路径
+&gt;&gt; 绝对路径：
+&gt;&gt;&gt; 硬盘绝对路径
+&gt;&gt;&gt; 网络绝对路径
+
+&gt;&gt; 相对路径
+&gt;&gt;&gt; 目标和自身同一文件夹，直接写文件名 或 ' ./(文件名) '
+&gt;&gt;&gt; 目标文件在自身文件夹的下一级  ' /(文件名) '
+&gt;&gt;&gt; 目标文件在自身文件夹的上一级  ' ../(文件名) '
+&gt;&gt;&gt; 到了盘符目录继续' ../ '没有效果
+&gt;&gt;&gt; ' / '作为路径开始的概念只有服务器中或mac系统(也是配合同级一起使用)
+
+* ' width '属性 宽度，像素单位（不用带单位）
+
+* ' height '属性 高度，像素单位（不用带单位）
+
+* ' alt '属性 替换文本，通常是图片无法正常加载时显示出来
+
+* ' title '属性 鼠标悬停时候会显示的文字（任何标签都有' title '属性）
+
+## 解决图片底部默认空白缝隙问题
+
+1. 给图片添加 vertical-align:middle | top| bottom 等。 （提倡使用的）
+
+2. 把图片转换为块级元素 display: block
+
+3. 给父元素设置`font-size`
+
+4. 给父元素设置`line-height`
+</code></pre>
+<p><strong>只写一个值width/height，width/height会等比例缩放.</strong></p>
+<h3 id="a">超链接标签(<code>a</code>)</h3>
+<pre><code>1. 跳转到其他html页面的一个标签
+
+2. ' href '属性 跳转的路径
+
+    1. 跳转到网络的绝对路径
+
+    2. 跳转到本地绝对路径
+
+    3. 跳转到相对路径
+
+    4. 空链接，' # '代替链接地址
+
+    5. 下载链接，地址链接是文件' .exe ' 或者是 ' .zip '等压缩包形式
+
+    6. 描点链接：点击可以快速定位到页面中的某个位置
+        * 在连接文本' href '属性中，设置属性值为 #名字 的形式，如' &lt;a href="#two"&gt;第二集&lt;/a&gt; '
+        * 找到目标位置的标签，里面添加一个id属性 = 刚才的名字，如' &lt;h3 id="two"&gt;第二集介绍&lt;/h3&gt; '
+
+3. ' target '属性
+
+* ' target = "_self" ' 自身标签页面跳转 默认值
+
+* ' target = "_blank" ' 新建一个标签页打开要跳转的页面
+</code></pre>
+<p><strong>在<head>里面加上<base target = "_blank>可以设置所有链接用新页面跳转</strong></p>
+<hr />
+<h2 id="h5">h5新增语义化标签</h2>
+<pre><code>* &lt;header&gt;：头部标签
+* &lt;nav&gt;：导航标签
+* &lt;article&gt;：内容标签
+* &lt;section&gt;：定义文档某个区域
+* &lt;aside&gt;：侧边栏标签
+* &lt;footer&gt;：尾部标签
+</code></pre>
+<h4 id="_5">注意点</h4>
+<pre><code>1. 这种语义化标准主要是针对搜索引擎的  
+2. 这些新标签页面中可以使用多次
+3. 在 IE9 中，需要把这些元素转换为块级元素
+</code></pre>
+<h3 id="_6">新增的多媒体标签主要包含两个：</h3>
+<ol>
+<li>
+<p>音频：<audio></p>
+<ul>
+<li>
+<p>只支持MP4、WebM、Ogg格式。尽量使用MP4格式</p>
+</li>
+<li>
+<p>语法：</p>
+</li>
+</ul>
+</li>
+</ol>
+<pre><code class="language-html">    &lt;video controls=&quot;controls&quot; width=&quot;300&quot;&gt;
+        &lt;source src=&quot;move.ogg&quot; type=&quot;video/ogg&quot; &gt;
+        &lt;source src=&quot;move.mp4&quot; type=&quot;video/mp4&quot; &gt;
+        您的浏览器暂不支持 &lt;video&gt; 标签播放视频
+    &lt;/ video &gt;
+</code></pre>
+<ul>
+<li>
+<p><strong>gu谷歌浏览器66版本开始要求自动播放需要静音</strong></p>
+<ol>
+<li>
+<p>视频：<code>&lt;video&gt;</code></p>
+</li>
+<li>
+<p>只支持MP3、Wav、Ogg格式</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>谷歌浏览器把音频和视频自动播放禁止了</strong></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  </body>
+</html>

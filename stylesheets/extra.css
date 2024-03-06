@@ -1,0 +1,41 @@
+:root {
+    --md-accent-fg-color: #00000052,
+        --md-default-fg-color--lighter: #ccc
+}
+
+/* 导航栏背景 */
+.md-header {
+    background-color: white;
+}
+
+/* 搜索框 */
+.md-search__form{
+    border-radius: 15px;
+}
+
+.md-search__input {
+    background-color: rgb(65, 57, 57);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.focus-visible{
+    background-color: rgb(230, 224, 224);
+    border-radius:0;
+    color: #000;
+}
+
+/* logo */
+.md-header__button{
+    color: black;
+}
+
+/* 名字 */
+.md-header__topic{
+    color: #000;
+}
+
+/* 底部 */
+.md-footer{
+    display: none;
+}
